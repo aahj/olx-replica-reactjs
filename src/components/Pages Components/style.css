@@ -1,0 +1,39 @@
+/*-------------------------- Page Compo-------------------------- */
+
+.icon_spacing{
+    margin-left: 9px;
+}
+.Link{
+    color:rgb(158, 155, 155);
+}
+.Link:hover{
+    text-decoration: none;
+    outline: none;
+}
+ul{
+    padding-top: 8px;
+    color:rgb(158, 155, 155);
+}
+
+li{
+    list-style: none;
+}
+.products_gallery .icon_spacing{
+    margin-left: 9px;
+    font-size: 1.0em;
+    cursor: pointer;
+}
+.products_gallery .icon_spacing:hover{    
+    border: 4px solid cyan;
+    border-radius: 50px;
+}
+#view{    
+    font-size: 1.1em;
+    color:rgb(158, 155, 155);
+}
+.dropdown-menu p{
+    cursor: pointer;
+}
+.dropdown-menu p:hover{
+    color: rgba(0, 0, 255, 0.473);
+}

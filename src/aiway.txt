@@ -1,0 +1,27 @@
+#----------------from cardlist
+{/* {
+                    Data.map((val, i) => {
+                         return <Card
+                            key={i}
+                            imgsrc={val.imgsrc}
+                            price={val.price}
+                            title={val.title}
+                        />                      
+                    })
+                } */}
+
+                {/* {
+                    this.state.showSingleCardComp && (                        
+                            <SingleCardComp
+                                key={this.state.selectedIndex}
+                                imgsrc={this.state.selectedItems.imgsrc}
+                                price={this.state.selectedItems.price}
+                                title={this.state.selectedItems.title}
+                                seller={this.state.selectedItems.seller_desc}
+                                desc={this.state.selectedItems.description}
+                                loc={this.state.selectedItems.location}
+                            />                        
+                    )
+                } */}
+/////////////////////////////////////////////////////////////////////////////////////////////////////
+

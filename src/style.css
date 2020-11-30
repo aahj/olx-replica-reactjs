@@ -1,0 +1,127 @@
+/* --------------Header --------------*/
+
+.navlink-color {
+    color: black;
+}
+
+.navlink-color:hover {
+    color: darkcyan;
+    outline: none;
+    text-decoration: none;
+}
+
+.navigation {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9em;
+}
+
+/* --------------top component--------------*/
+
+.top {
+    background-color: rgb(245, 245, 245);
+}
+
+.sell {
+    width: 100px;
+}
+
+/* --------------card component--------------*/
+
+.card {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    float: left;
+    /* IE 9 */
+    -ms-transform: rotate(-8deg);
+    /* Safari */
+    -webkit-transform: rotate(-8deg);
+    transform: rotate(-8deg);
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+.card-img-top {
+    height: 200px;
+    width: 200px;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-date {
+    color: darkgray;
+    font-size: 0.8em;
+}
+
+.card-title {
+    font-weight: bold;
+    letter-spacing: 0.2em;
+}
+
+.card-text {
+    color: rgb(153, 149, 149);
+    font-size: 1.0em;
+}
+
+.card-body {
+    border-left: 5px solid gold;
+}
+
+/* --------------Single Card Component --------------*/
+
+.detail {
+    border: 1px solid darkgray;
+    margin: 20px 0;
+    padding: 20px 30px;
+}
+
+.details_tag {
+    box-sizing: border-box;
+    border: 1px solid darkgrey;
+    padding: 20px 30px;
+}
+
+.details_title_tag {
+    color: rgb(153, 149, 149);
+    letter-spacing: 0.3em;
+}
+
+.details_loc_tag {
+    color: rgb(153, 149, 149);
+    font-size: 0.8em;
+    letter-spacing: 0.4em;
+}
+
+.details_price_tag {
+    font-weight: 900;
+}
+
+/*  */
+
+.seller_tag {
+    box-sizing: border-box;
+    border: 1px solid darkgrey;
+    padding: 30px 30px;
+    margin: 10px 0;
+}
+
+.seller_tag img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.seller_tag p {
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.4em;
+    text-transform: capitalize;
+}
+
+.seller_tag h3 {
+    color: rgb(141, 134, 134);
+    font-weight: 500;
+}
