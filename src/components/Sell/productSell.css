@@ -1,0 +1,41 @@
+.sellProduct-div {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1c2833;
+    color: #fff;
+    margin: 100px auto;
+    width: 450px;
+    padding: 60px;
+}
+
+.sellProduct-heading {
+    text-align: center;
+    color: darkgrey;
+    font-weight: 200;
+    letter-spacing: 0.1em;
+    margin-bottom: 40px;
+}
+
+.text_input {
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    height: 40px;
+    outline: none;
+    font-size: 16px;
+    color: #fff
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    color: lime;
+    font-weight: 300;
+}
+.submitBtn{    
+    width: 100px;
+    height: 35px;
+    background-color:whitesmoke;
+    color: #000;
+}

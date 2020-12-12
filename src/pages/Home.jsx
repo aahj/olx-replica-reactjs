@@ -3,11 +3,16 @@ import { Link } from 'react-router-dom';
 import Banner from '../components/banner';
 import CardList from '../components/CardList';
 import FeaturedProducts from '../components/FeaturedProducts';
+import Top from '../components/top';
+import Header from '../components/Header';
+import Sell from '../components/Sell/sell';
 
 class Home extends Component {
     render() {
         return (
             <div>
+                <Top />
+                <Header />
                 <Banner />
                 <div className='container-fluid'>
                     <div className='jumbotron p-4 mt-3'>
@@ -32,6 +37,7 @@ class Home extends Component {
                         />
                     </div>
                 </div>
+                <Sell/>
             </div>
         )
     }

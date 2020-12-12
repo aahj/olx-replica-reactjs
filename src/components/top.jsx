@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import '../style.css';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { ProductConsumer } from '../config/context';
 import { Button } from 'react-bootstrap';
 import InputGroup from './Bootstrap Component/InputGroup';
+import '../style.css';
 
-export default class Top extends Component {
+class Top extends Component {
     state = {
         search: ''
     }
@@ -19,6 +19,10 @@ export default class Top extends Component {
         this.setState({
             search: ''
         })
+    }
+    onRoute = () => {
+        let path = `/login`;
+        this.props.history.push(path);
     }
 
     render() {
@@ -85,7 +89,7 @@ export default class Top extends Component {
                                         </div>
 
                                         <div className='col-md-3 col-lg-3 mt-2'>
-                                            <Button variant="link">Login</Button>{' '}
+                                            <Button onClick={this.onRoute} variant="link">Login</Button>{' '}
                                             <Button className='ml-2 w-50' variant="dark">Sell</Button>{' '}
                                         </div>
                                     </div>
@@ -98,3 +102,4 @@ export default class Top extends Component {
         )
     }
 }
+export default withRouter(Top);

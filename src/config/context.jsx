@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { Data, detailProduct } from '../components/Data';
+import {fire,auth} from './firebase';
+
 
 const ProductContext = React.createContext();
 class ProductProvider extends Component {
     state = {
         // products: Data, //----this we are referencing data to products
-        //----------best way to do it
+        //----------best way to do it        
         products: [],
         featuredProducts: [],
         freshRecommend: [],
@@ -16,11 +18,25 @@ class ProductProvider extends Component {
         category_tv: [],
         category_tablets: [],
         category_lands: [],
-        detailProduct: detailProduct,     
+        detailProduct: detailProduct,
+        auth_user: {}
     }
 
     componentDidMount() {
         this.settingProducts();
+        this.onAuth_state_change();
+    }
+    //on auth state change
+    onAuth_state_change = () => {
+        auth.onAuthStateChanged((user) => {
+            if (user) {
+                this.setState({
+                    auth_user: user
+                })
+            } else {
+                console.log('User is signOut');
+            }
+        });
     }
 
     //--------to copy values from Data
@@ -97,7 +113,7 @@ class ProductProvider extends Component {
             <ProductContext.Provider value={{
                 ...this.state,
                 handleDetails: this.handleDetails,
-                handleChangeSort: this.handleChangeSort,                
+                handleChangeSort: this.handleChangeSort,
             }}>
                 {this.props.children}
             </ProductContext.Provider>
@@ -105,4 +121,4 @@ class ProductProvider extends Component {
     }
 }
 const ProductConsumer = ProductContext.Consumer;
-export { ProductProvider, ProductConsumer, ProductContext};
+export { ProductProvider, ProductConsumer, ProductContext };

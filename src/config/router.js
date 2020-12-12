@@ -11,13 +11,14 @@ import Houses from '../pages/Houses';
 import Tv from '../pages/Tv_audio_video';
 import Tablets from '../pages/Tablets';
 import Lands from '../pages/Lands_and_plots';
+import Login from '../components/Login/Login';
+import Sell from '../components/Sell/sell';
 
 class RoutePages extends React.Component {
   render() {
     return (
       <Router>
-        <Top />
-        <Header />
+
         <Route exact path='/' component={Home} />
         <Route exact path='/mobile-phones' component={MobilePhones} />
         <Route exact path='/cars' component={Cars} />
@@ -27,6 +28,8 @@ class RoutePages extends React.Component {
         <Route exact path='/tablets' component={Tablets} />
         <Route exact path='/lands-and-plots' component={Lands} />
         <Route path='/details' component={SingleCard} />
+        <Route exact path='/login' component={Login} />
+        <Route exact path='/sell-products' component={Sell} />
         <Redirect to='/' />
       </Router>
     )
