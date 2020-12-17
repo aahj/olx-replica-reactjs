@@ -2,11 +2,15 @@ import React, { Component } from 'react'
 import One_For_All from '../components/Pages Components/One_For_All';
 import Mobile_category from '../components/Pages Components/Mobile_category';
 import { Link } from 'react-router-dom';
+import Top from '../components/top';
+import Header from '../components/Header';
 
 export default class Mobile_phones extends Component {
     render() {
         return (
             <div>
+                <Top />
+                <Header />
                 <One_For_All
                     heading='Mobile Phones'
                     list={<Mobile_category

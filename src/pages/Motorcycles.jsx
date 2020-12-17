@@ -2,11 +2,15 @@ import React, { Component } from 'react'
 import One_For_All from '../components/Pages Components/One_For_All';
 import Motorcycles_category from '../components/Pages Components/Motorcycles_category';
 import { Link } from 'react-router-dom';
+import Top from '../components/top';
+import Header from '../components/Header';
 
 export default class Motorcycles extends Component {
     render() {
         return (
             <div>
+                <Top />
+                <Header />
                 <One_For_All
                     heading='Motorcycles'
                     list={<Motorcycles_category
@@ -25,7 +29,7 @@ export default class Motorcycles extends Component {
                             <li><Link className='Link' to=''>Suzuki</Link></li>
                             <li><Link className='Link' to=''>Toyota</Link></li>
                             <li><Link className='Link' to=''>Honda</Link></li>
-                            <li><Link className='Link' to=''>Yamaha</Link></li>                            
+                            <li><Link className='Link' to=''>Yamaha</Link></li>
 
                         </ul>
                     }

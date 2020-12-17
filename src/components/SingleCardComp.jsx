@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { ProductConsumer } from '../config/context';
 import CardList from './CardList';
 import userIcon from '../image/user1.png';
+import Top from '../components/top';
+import Header from '../components/Header';
 
 class SingleCardComp extends Component {
     render() {
@@ -12,6 +14,7 @@ class SingleCardComp extends Component {
                         const { imgsrc, price, title, seller_desc, description, location } = value.detailProduct || {};
                         return (
                             <div>
+                                <Top /><Header />
                                 <div className='container'>
                                     <div className='row'>
                                         <div className='col-md-7'>

@@ -2,11 +2,15 @@ import React, { Component } from 'react'
 import One_For_All from '../components/Pages Components/One_For_All';
 import Tablets_category from '../components/Pages Components/Tablets_category';
 import { Link } from 'react-router-dom';
+import Top from '../components/top';
+import Header from '../components/Header';
 
 export default class Tablets extends Component {
     render() {
         return (
             <div>
+                <Top />
+                <Header />
                 <One_For_All
                     heading='Tablets'
                     list={<Tablets_category

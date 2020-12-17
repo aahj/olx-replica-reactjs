@@ -2,11 +2,15 @@ import React, { Component } from 'react'
 import One_For_All from '../components/Pages Components/One_For_All';
 import Tv_category from '../components/Pages Components/Tv_category';
 import { Link } from 'react-router-dom';
+import Top from '../components/top';
+import Header from '../components/Header';
 
 export default class Tv_audio_video extends Component {
     render() {
         return (
             <div>
+                <Top />
+                <Header />
                 <One_For_All
                     heading='Tv-audio-video'
                     list={<Tv_category
@@ -22,7 +26,7 @@ export default class Tv_audio_video extends Component {
                     filterForMake={
                         <ul>
                             <li><Link className='Link' to=''>Tv</Link></li>
-                            <li><Link className='Link' to=''>Video-audio</Link></li>                            
+                            <li><Link className='Link' to=''>Video-audio</Link></li>
                         </ul>
                     }
                 />

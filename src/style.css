@@ -35,10 +35,10 @@
 .card:hover {
     float: left;
     /* IE 9 */
-    -ms-transform: rotate(-8deg);
+    -ms-transform: rotate(-3deg);
     /* Safari */
-    -webkit-transform: rotate(-8deg);
-    transform: rotate(-8deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
     box-shadow: 10px 10px 5px #aaaaaa;
 }
 

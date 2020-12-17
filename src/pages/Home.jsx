@@ -5,7 +5,6 @@ import CardList from '../components/CardList';
 import FeaturedProducts from '../components/FeaturedProducts';
 import Top from '../components/top';
 import Header from '../components/Header';
-import Sell from '../components/Sell/sell';
 
 class Home extends Component {
     render() {
@@ -37,7 +36,6 @@ class Home extends Component {
                         />
                     </div>
                 </div>
-                <Sell/>
             </div>
         )
     }

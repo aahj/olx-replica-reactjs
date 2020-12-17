@@ -1,7 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Redirect, Route } from "react-router-dom";
-import Header from '../components/Header';
-import Top from '../components/top';
 import SingleCard from '../components/SingleCardComp';
 import MobilePhones from '../pages/Mobile_phones';
 import Home from '../pages/Home';
@@ -18,7 +16,7 @@ class RoutePages extends React.Component {
   render() {
     return (
       <Router>
-
+        <Route path='/details' component={SingleCard} />
         <Route exact path='/' component={Home} />
         <Route exact path='/mobile-phones' component={MobilePhones} />
         <Route exact path='/cars' component={Cars} />
@@ -27,7 +25,6 @@ class RoutePages extends React.Component {
         <Route exact path='/tv-audio-video' component={Tv} />
         <Route exact path='/tablets' component={Tablets} />
         <Route exact path='/lands-and-plots' component={Lands} />
-        <Route path='/details' component={SingleCard} />
         <Route exact path='/login' component={Login} />
         <Route exact path='/sell-products' component={Sell} />
         <Redirect to='/' />

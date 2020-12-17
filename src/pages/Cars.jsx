@@ -2,11 +2,15 @@ import React, { Component } from 'react'
 import One_For_All from '../components/Pages Components/One_For_All';
 import Cars_category from '../components/Pages Components/Cars_category';
 import { Link } from 'react-router-dom';
+import Top from '../components/top';
+import Header from '../components/Header';
 
 export default class Cars extends Component {
     render() {
         return (
             <div>
+                <Top />
+                <Header />
                 <One_For_All
                     heading='Cars'
                     list={<Cars_category
@@ -20,13 +24,13 @@ export default class Cars extends Component {
 
                         </ul>
                     }
-                    filterHeading ='Make'
+                    filterHeading='Make'
                     filterForMake={
                         <ul>
                             <li><Link className='Link' to=''>Suzuki</Link></li>
                             <li><Link className='Link' to=''>Toyota</Link></li>
                             <li><Link className='Link' to=''>Honda</Link></li>
-                            <li><Link className='Link' to=''>Nissan</Link></li>                            
+                            <li><Link className='Link' to=''>Nissan</Link></li>
 
                         </ul>
                     }
